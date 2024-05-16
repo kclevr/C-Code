@@ -1,0 +1,49 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <sstream>
+
+int main ()
+{
+  char word_list[3] = {'a', 'b', 't'};
+  // std::string word = "bad";
+  char ch = 't';
+  int user_guess = 20;
+
+ char lower_alph[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+  char upper_alph[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+
+  std::cout << word_list.size() << std::endl;
+  int sum = 0;
+  int word_pos;
+  for(word_pos = 0; word_pos < word.size(); word_pos++)
+       {
+	  for(int pos = 0; pos < 26; pos++)
+	    {
+	      if ( word[word_pos] == lower_alph[pos])
+		{
+		  sum = sum + (pos + 1);
+		  std::cout << sum << std::endl;
+		  
+		}
+	      if ( word[word_pos] == upper_alph[pos])
+	        {
+	          sum = sum + (pos + 1);
+		}
+	    }
+       }
+}
+    if(sum == int_input)
+	     {
+	      std::cout<< word_value << std::endl;
+	      break;
+	     }
+	}
+      
+      // std::cout << sum << std::endl;
+ 
+  if ( list_pos == (array_length - 1))
+   {
+     std::cout << "There was no word that matched the word you entered" << std::endl;
